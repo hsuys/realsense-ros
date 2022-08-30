@@ -105,6 +105,7 @@ rs2::stream_profile ProfilesManager::getDefaultProfile()
 
     for (auto profile : _all_profiles)
     {
+        default_profile = profile;
         stream_index_pair sip(profile.stream_type(), profile.stream_index());
         if (profile.is_default())
         {
